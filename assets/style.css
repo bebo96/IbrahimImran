@@ -168,7 +168,6 @@ body {
 .my-work img:hover{
     opacity: 1;
     transform: scale(1.25);
-
 }
 
 .my-work-thumbnails{
@@ -189,6 +188,31 @@ body {
     margin: 0;
 }
 
+.contact-me {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.contact-me h1{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.contact-me p {
+    text-align: center;
+    line-height: 1,7;
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -200,5 +224,56 @@ body {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    header {
+        position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .my-work-thumbnails img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        flex-direction: column;
+
+    }
+
+    .my-work-thumbnails{
+        flex-direction: column;
+        align-items: center;
+
     }
 }

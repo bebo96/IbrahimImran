@@ -157,13 +157,36 @@ body {
     margin-bottom: 50px;
 }
 
-.my-work-thumbnail{
-}
-
 .my-work img{
     width: 350px;
-    justify-content: space-evenly;
+    margin: 0;
+    opacity: 0.5;
+    resize: none;
+    height: 190px;
+}
 
+.my-work img:hover{
+    opacity: 1;
+    transform: scale(1.25);
+
+}
+
+.my-work-thumbnails{
+    display: flex;
+}
+
+.my-work-thumbnails a {
+    text-align: center;
+    line-height: 1,7;
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+.my-work-thumbnails a p {
+    margin: 0;
 }
 
 @keyframes gradient {

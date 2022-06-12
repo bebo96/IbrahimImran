@@ -195,7 +195,15 @@ body {
     flex-direction: column; 
 }
 
-.contact-me h1{
+.contact-address {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    /* width: 100%; */
+    justify-content: space-evenly;
+}
+
+.contact-me div h1{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 36px;
@@ -203,7 +211,7 @@ body {
     margin-bottom: 50px;
 }
 
-.contact-me p {
+.contact-me p, .contact-me address a{
     text-align: center;
     line-height: 1,7;
     color: var(--primary-color);
@@ -212,6 +220,21 @@ body {
     margin: 0 auto;
 }
 
+.contact-me a{
+    display:block;
+}
+
+.contact-address address{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-address address a{
+    margin: 0 50px;
+    width: 150%;
+    border: 1px solid red;
+    white-space: nowrap;
+}
 
 @keyframes gradient {
     0% {
@@ -259,6 +282,18 @@ body {
     section {
         padding: 30px 15px;
     }
+    .my-work-thumbnails img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        flex-direction: column;
+
+    }
+    .my-work-thumbnails{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -270,10 +305,10 @@ body {
         flex-direction: column;
 
     }
-
     .my-work-thumbnails{
         flex-direction: column;
         align-items: center;
 
     }
+    
 }
